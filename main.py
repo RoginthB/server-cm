@@ -1,6 +1,6 @@
-def main():
-    print("Hello from server-cm!")
+from fastapi import FastAPI
+from src.router import router as process_router
 
+app = FastAPI()
 
-if __name__ == "__main__":
-    main()
+app.include_router(process_router)
