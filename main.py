@@ -8,7 +8,7 @@ app.include_router(process_router)
 
 origins = [
     "http://localhost:5173",
-    "https://server-webresearchai.onrender.com"
+    "https://webresearchai.netlify.app"
 ]
 
 app.add_middleware(
